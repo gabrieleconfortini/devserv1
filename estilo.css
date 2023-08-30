@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "menu menu" 
+    "sidebar conteudo";
+}
+
+#menu{
+    background-color: #DB7093;
+    grid-area: menu;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+}
+
+#sidebar{
+    background-color: #FFB6C1;
+    grid-area: sidebar;
+    height: 90vh;
+    width: 15vw;
+}
+
+#conteudo{
+    background-color: white;
+    grid-area: conteudo;
+    height: 90vh;
+    width: 85vw;
+}
+
+.nav{
+    display: flex;
+    /* border: 1px solid #fff; */
+    text-decoration: none;
+    gap: 5%;
+}
+
+.nav li{
+    list-style: none;
+    height: 10vh;
+}
+
+.nav li:hover{
+    background-color: #FFE4E1;
+}
+
+.vertical-menu{
+    background-color: #FFE4E1;
+    height: 90vh;
+    width: 15vw;
+}
+
+.vertical-menu a{
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover{
+    background-color: white;
+}
+
